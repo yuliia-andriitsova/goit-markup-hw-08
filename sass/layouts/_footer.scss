@@ -1,0 +1,143 @@
+.footer {
+    background-color: var(--background-hero-footer-color);
+    padding-top: 60px;
+    padding-bottom: 59px;
+    &__main {
+            display: flex;
+        }
+        .footer-links {
+        margin-right: 93px;
+        }
+}
+
+
+.address {
+    margin-top: 21px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-right: 70px;
+
+    &__item-address {
+            color: var(--add-color-text);
+            font-style: normal;
+            @include font (null, 14px, 1.71, 0.03em);
+            text-decoration: none;
+    
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+                &:hover,
+                &:focus {
+                        color: var(--accent);
+                    }
+        }      
+    &__item-link {
+       color: var(--add-color-link);
+       font-style: normal;
+    @include font (null, 14px, 1.71, 0.03em);
+       text-decoration: none;
+
+       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+         &:hover,
+         &:focus {
+            color: var(--accent);
+        }
+   }
+}
+
+  
+/* альтернативный вариант отступов в адресе
+.address-item:not(:last-child) {
+	margin-bottom: 9px; } */
+
+
+.footerlogo-web {
+    color: var(--accent);
+}
+
+.footerlogo-studio {
+    color: var(--add-color-text);
+}
+
+.section-subtitle.for-footer {
+    color: var(--add-color-text);
+    margin-bottom: 20px;
+    padding-top: 0;
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+
+.item-card-social-links.for-footer {
+    gap: 10px;
+}
+
+.item-card-links-bgr.for-footer {
+    background-color: rgba(255, 255, 255, 0.1);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     &:hover,
+     &:focus {
+        background-color: var(--accent);
+    }
+}
+
+
+
+.item-card-icon.for-footer {
+    fill: var(--add-color-text);
+}
+
+
+
+.button.for-footer {
+    padding-left: 28px;
+    padding-right: 28px;
+     &:hover,
+     &:focus {
+        background-color: #188ce8;
+    }
+
+}
+
+
+.icon-for-footer {
+    width: 24px;
+    height: 24px;
+    fill: var(--add-color-text);
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe {
+    display: inline-flex;
+    gap: 12px;
+}
+
+
+.input-email {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: var(--background-hero-footer-color);
+    padding-left: 16px;
+    
+    @include font (null, 16px, 1.25, 0.03em);
+
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+         &:hover,
+         &:focus {
+         box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+         border-color: var(--accent);
+    }
+
+}
+

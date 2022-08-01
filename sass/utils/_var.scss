@@ -1,0 +1,24 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent: #2196f3;
+    --add-color-logo: #000000;
+    --add-color-text: #ffffff;
+    --add-color-link: rgba(255, 255, 255, 0.6);
+    --background-header-color: #ffffff;
+    --background-primary-color: #f5f5f5;
+    --background-secondary-color: #f5f4fa;
+    --background-hero-footer-color: #2f303a;
+    --background-catalogue-color: #eeeeee;
+    --add-color-headerline: #ececec;
+}
+
+@mixin font ($fw, $fs, $lh, $ls) {
+    
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    letter-spacing: $ls;
+    
+}
+    

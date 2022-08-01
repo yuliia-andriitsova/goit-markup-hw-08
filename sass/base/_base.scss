@@ -1,0 +1,37 @@
+
+
+.body {
+    color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+
+
+
+}
+
+
+.section-title {
+    color: var(--title-text-color);
+    @include font (700, 36px, 1.17, 0.03em);
+    
+
+    text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 50px;
+    /* outline: tomato solid 2px; */
+}
+
+
+
+.section-subtitle {
+    color: var(--title-text-color);
+    @include font (700, 14px, 1.14, 0.03em);
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+    margin-top: 0;
+    padding-top: 30px;
+    /* outline: tomato solid 2px; */
+
+
+}

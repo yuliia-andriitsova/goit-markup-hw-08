@@ -1,0 +1,47 @@
+.clients-icon {
+    fill: #afb1b8;
+    height: 60px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 92px;
+
+
+@media screen and (max-width:767px) {
+        width: 210px;
+       }
+@media screen and (min-width:768px) {
+    width: 226px;
+}
+@media screen and (min-width:1200px) {
+    width: 170px;
+}
+  
+
+
+     &:hover .clients-icon,
+     &:focus .clients-icon {
+        fill: var(--accent);
+    }
+
+}
+
+.clients-list {
+    display: flex;
+    gap: 30px;
+}
+
+
+
+/* .clients-item:not(:last-child) {
+	margin-right: 30px;
+} */

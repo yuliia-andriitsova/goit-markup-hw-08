@@ -40,12 +40,12 @@
 .item-card {
     padding: 30px 32px;
 
-     .item-card-links {
+     &__links {
             display: flex;
             justify-content: space-between;
             cursor: pointer;
         }
-     .item-card-links-bgr {
+     &__links-bgr {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -69,7 +69,7 @@
             fill: var(--add-color-text);
              }
    }
-        .item-card-icon {
+        &__icon {
              fill: #afb1b8;
              width: 20px;
              height: 20px;
@@ -78,7 +78,7 @@
              transition-duration: 250ms;
              transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
          }
-       .item-card-title {
+       &__title {
              color: var(--title-text-color);
             @include font (500, 16px, 1.19, 0.03em);
              text-align: center;
@@ -87,7 +87,7 @@
                margin-bottom: 10px;
                 /* outline: tomato solid 2px; */
                  }
-     .item-card-text {
+   &__text {
              @include font (null, 16px, 1.19, 0.03em);
 
 
@@ -97,7 +97,7 @@
              /* padding-bottom: 30px; */
              /* outline: tomato solid 2px; */
          }
-     .item-card-social-links {
+     &__social-links {
                display: flex;
                justify-content: space-between;
            }

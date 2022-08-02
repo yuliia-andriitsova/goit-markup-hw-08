@@ -234,6 +234,9 @@ img {
   line-height: 1.18;
   letter-spacing: 0.02em;
 }
+.menu-container .site-nav__link--current {
+  text-decoration: none;
+}
 
 .menu-container.is-open {
   display: block;

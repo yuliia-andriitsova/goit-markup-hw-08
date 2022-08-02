@@ -99,6 +99,10 @@
 		@include font(500, 40px, 1.18, 0.02em);
 	}
 
+	.site-nav__link--current {
+		text-decoration: none;
+	}
+
 	// position: absolute;
 
 	// display: none;

@@ -8,6 +8,7 @@
 			text-align: center;
 			padding-left: 109px;
 			padding-right: 109px;
+			padding-bottom: 60px;
 		}
 	}
 
@@ -15,6 +16,12 @@
 		@media screen and (max-width: 1199px) {
 			padding-top: 0;
 			padding-bottom: 60px;
+		}
+	}
+
+	&-main {
+		@include desktop {
+			display: flex;
 		}
 	}
 }
@@ -107,12 +114,18 @@
 		padding-left: auto;
 		padding-right: auto;
 	}
+
+	@include desktop {
+		padding-left: 0;
+		padding-right: 93px;
+	}
 }
 
 .item-card-links-bgr.for-footer {
 	background-color: rgba(255, 255, 255, 0.1);
 
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 	&:hover,
 	&:focus {
 		background-color: var(--accent);
@@ -124,8 +137,8 @@
 }
 
 .button.for-footer {
-	padding-left: 28px;
-	padding-right: 28px;
+	padding-left: 20px;
+	padding-right: 20px;
 	&:hover,
 	&:focus {
 		background-color: #188ce8;
@@ -142,7 +155,7 @@
 }
 
 .subscribe {
-	@media screen and (min-width: 1199x) {
+	@media screen and (min-width: 1199px) {
 		display: inline-flex;
 		gap: 12px;
 	}
@@ -191,7 +204,7 @@
 }
 
 .footer-tablet {
-	@media screen and (min-width: 768px) and (max-width: 1199px) {
+	@media screen and (min-width: 768px) {
 		display: flex;
 		justify-content: space-between;
 	}

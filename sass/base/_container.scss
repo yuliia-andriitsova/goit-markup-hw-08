@@ -4,10 +4,8 @@
 	padding-left: 15px;
 	padding-right: 15px;
 	/* outline: tomato solid 2px; */
-
-	@media screen and (min-width: 480px) {
-		width: 480px;
-	}
+	width: 480px;
+	max-width: 100%;
 
 	// @include mobile {
 	//         width: 480px;

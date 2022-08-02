@@ -1,7 +1,28 @@
+.clients {
+	.container {
+		width: 100%;
+	}
+}
+
 .clients-list {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
+
+	.clients-item {
+		width: calc((100% - 30px) / 2);
+	}
+
+	@include tablet {
+		.clients-item {
+			width: calc((100% - 60px) / 3);
+		}
+	}
+	.clients-item {
+		@include desktop {
+			width: calc((100% - 150px) / 6);
+		}
+	}
 
 	.clients-link {
 		display: flex;
@@ -12,17 +33,17 @@
 		cursor: pointer;
 		height: 92px;
 
-		@media screen and (max-width: 767px) {
-			width: 210px;
-		}
+		// @media screen and (max-width: 767px) {
+		// 	width: 210px;
+		// }
 
-		@media screen and (min-width: 768px) {
-			width: 226px;
-		}
+		// @media screen and (min-width: 768px) {
+		// 	width: 226px;
+		// }
 
-		@media screen and (min-width: 1200px) {
-			width: 170px;
-		}
+		// @media screen and (min-width: 1200px) {
+		// 	width: 170px;
+		// }
 
 		.clients-icon {
 			fill: #afb1b8;

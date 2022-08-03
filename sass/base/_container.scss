@@ -4,8 +4,11 @@
 	padding-left: 15px;
 	padding-right: 15px;
 	/* outline: tomato solid 2px; */
-	width: 480px;
-	max-width: 100%;
+
+	@media screen and (min-width: 320px) and (max-width: 767px) {
+		width: 480px;
+		max-width: 100%;
+	}
 
 	// @include mobile {
 	//         width: 480px;

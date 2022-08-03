@@ -648,7 +648,7 @@ img {
     padding-right: 122px;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .item-card-social-links {
     padding-left: 74px;
     padding-right: 74px;
@@ -1189,7 +1189,7 @@ img {
   display: flex;
   font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   align-items: center;
   justify-content: start;
 }

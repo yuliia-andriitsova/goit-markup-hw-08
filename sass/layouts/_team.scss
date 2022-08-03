@@ -119,7 +119,7 @@
 			padding-right: 122px;
 		}
 
-		@media screen and (max-width: 1199px) {
+		@media screen and (min-width: 768px) and (max-width: 1199px) {
 			padding-left: 74px;
 			padding-right: 74px;
 		}

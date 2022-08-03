@@ -1,5 +1,6 @@
 .form {
 	padding: 40px;
+
 	.title-form {
 		@include font(700, 20px, 1.15, 0.03);
 
@@ -52,7 +53,7 @@
 	.label-policy {
 		display: flex;
 
-		@include font(null, 12px, 1.17, 0.03em);
+		@include font(null, 12px, 1.17, 0.02em);
 		// font-size: 14px;
 		// line-height: 1.71;
 		// letter-spacing: 0.03em;
